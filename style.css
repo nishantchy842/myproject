@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.642), rgba(0, 0, 0, 0.683)), url(me.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.text{
+    color:rgb(19, 168, 160);
+    background-color: azure;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+    opacity: 0.5;
+    transform: rotate(10deg);
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:aliceblue;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    text-decoration: none;
+    color: aliceblue;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.content h1{
+    text-transform: uppercase;
+    font-size: 60px;
+    margin-top: 10px;
+}
+.content p{
+    text-transform: capitalize;
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: aliceblue;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+button span{
+    background: #009688;
+    text-decoration: none;
+    color: green;
+    width: 0%;
+    height: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+body
+{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container 
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background: #ffff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 1);
+}
+.container .left-side
+{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+.profiletext
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.profiletext .imgbox
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profiletext .imgbox img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profiletext h2{
+    color: #ffff;
+    font-size: 1.4em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profiletext h2 span
+{
+    color: #ffff;
+    font-size: 0.7em;
+    font-weight: 300;
+}
+.contactinfo
+{
+    padding-top: 40px;
+}
+
+.contactinfo .title
+{
+    color: #ffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactinfo ul
+{
+    position: relative;
+}
+.contactinfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactinfo ul li .Icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #009688;
+}
+.contactinfo ul li span
+{
+    color: #ffff;
+    font-weight: 300;
+}
+.contactinfo ul li .text1
+{
+    font-size: 14px;
+}
+.contactinfo.education li
+{
+    margin-bottom: 15px;
+}
+.contactinfo.education h5
+{
+    color: #009688;
+    font-weight: 500;
+}
+.contactinfo.education h4:nth-child(2)
+{
+    color: #ffff;
+    font-weight: 500;
+}
+.contactinfo.education h4
+{
+    color: #ffff; 
+    font-weight: 100;
+}
+.contactinfo.language .percent
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: rgb(13, 12, 12);
+    border-radius: 3px;
+    display: block;
+    margin-top: 5px;
+}
+.contactinfo.language .percent div
+{
+    position: absolute;
+    background: #009688;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 3px;
+}
+
+.container .right-side
+{
+    position: relative;
+    background: #ffff;
+    padding: 40px;
+    margin: 50px 10px;
+}
+.profile h2{
+
+    padding-top: 10%;
+    margin-bottom: 10%;
+    position: relative;
+}
+.profile h2::after
+{
+    content: '';
+    width: 100%;
+    height: 1.5px;
+    background: #080a0a;
+    position: absolute;
+    left: 0;
+    bottom: -5px;  
+}
+.profile p
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-weight: 500;
+}
+.experience .title
+{
+    margin-top: 25%;
+    position: relative;
+
+}
+.experience .title::after
+{
+    content: '';
+    width: 100%;
+    height: 1.5px;
+    background: #080a0a;
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+}
+.experience ul
+{
+    margin-top: 10%; 
+}
+.experience ul li
+{
+    margin: 14px 0;
+    list-style: none;
+}
+.experience ul li .date
+{
+    position: relative;
+    
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    margin-right: 10%;
+}
+.experience ul li .place
+{
+    font-weight: 510;
+    position: relative;
+}
